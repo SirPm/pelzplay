@@ -18,11 +18,10 @@ export const getArtist = artistUrlParams =>
         }
     }
 
-export const getAudioDetails = ( audioUrl, audioName ) => 
-    dispatch => dispatch({
-        type: ArtistActionTypes.GET_AUDIO_DETAILS,
-        payload: [ audioUrl, audioName ]
-    })
+export const getAudioDetails = ( audioUrl, audioName ) => ({
+    type: ArtistActionTypes.GET_AUDIO_DETAILS,
+    payload: [ audioUrl, audioName ]
+})
 
 export const getArtists = () => 
     dispatch => {

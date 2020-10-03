@@ -7,6 +7,7 @@ import Homepage from './pages/homepage/Homepage';
 import ArtistsPage from './pages/artists-page/ArtistsPage';
 import AlbumPage from './pages/album-page/AlbumPage';
 import PlaylistPage from './pages/playlist-page/PlaylistPage';
+import FavouritePage from './pages/favourite-page/FavouritePage';
 import Footer from './components/footer/Footer';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path='/artists' component={ArtistsPage} />
           <Route path='/albums' component={AlbumPage} />
           <Route path='/playlist' component={PlaylistPage} />
+          <Route path='/favourites' component={FavouritePage} />
         </Switch>
         <Footer />
       </BrowserRouter>

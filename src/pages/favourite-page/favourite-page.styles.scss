@@ -1,0 +1,38 @@
+.favourite-page {
+    margin-left: 220px;
+    min-width: 770px;
+    position: relative;
+    padding-top: 60px;
+    min-height: 577px;
+    padding-bottom: 250px;
+
+    .artist-songs-header {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+
+        .number-img {
+            width: 15%;
+        }
+
+        .album-name {
+            width: 30%;
+        }
+
+        .track-name {
+            width: 30%;
+        }
+
+        .song-duration {
+            width: 15%;
+        }
+
+        .add-to-favourites {
+            width: 10%;
+        }
+
+
+    }
+}
