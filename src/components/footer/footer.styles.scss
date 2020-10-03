@@ -1,0 +1,20 @@
+.footer {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    background-color: greenyellow;
+    border-top: 1px solid #eaeaea;
+    border-top: 1px solid black;
+    bottom: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    left: 0;
+    min-width: 990px;
+    padding: 0 24px;
+    position: fixed;
+    right: 0;
+    z-index: 300;
+}

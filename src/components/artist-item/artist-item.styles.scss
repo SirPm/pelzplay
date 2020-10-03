@@ -1,0 +1,43 @@
+.artist-item {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+
+    .album-image {
+        width: 15%;
+        align-self: center;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .album-name {
+        width: 30%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .track-name {
+        width: 30%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .track-duration {
+        width: 15%;
+        text-align: center;
+        align-self: center;
+    }
+
+    .play-and-pause {
+        width: 10%;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-self: center;
+        cursor: pointer;
+    }
+}

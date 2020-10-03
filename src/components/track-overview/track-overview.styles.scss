@@ -1,0 +1,49 @@
+.track-overview {
+    margin-left: 220px;
+    min-width: 770px;
+    position: relative;
+    padding-top: 60px;
+    min-height: 577px;
+    padding-bottom: 250px;
+
+    .track-overview-heading {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        min-height: 50px;
+        padding: 40px 0;
+
+        .track-overview-img {
+            width: 20%;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 5px;
+            height: 150px;
+            margin: auto 0;
+            margin-right: 10%;
+        }
+
+        .track-overview-album-info {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            justify-content: space-around;
+            margin: auto 0;
+
+            .album-and-artist {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .track-no-duration {
+                display: flex;
+                justify-content: space-evenly;
+
+                .track-info {
+                    display: block;
+                    border-right: 1px solid black;
+                }
+            }
+        }
+    }
+}
