@@ -46,7 +46,9 @@ class ArtistPage extends Component {
                                 <span className="album-name">Album Name</span>
                                 <span className="track-name">Track Name</span>
                                 <span className="song-duration">Duration</span>
-                                <span className="add-to-favourites">+</span>
+                                <span className="play">Play</span>
+                                <span className="add-to-favourites">Add</span>
+                                <span className="remove-from-favourites">Remove</span>
                             </div>
                             {
                                 artist.tracks.map( track => <ArtistItem key={track.id} track={track} /> )

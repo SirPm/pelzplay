@@ -1,5 +1,5 @@
 import { FavouriteActionTypes } from './favouriteTypes';
-import { addTrackToFavourite } from './favouriteUtils';
+import { addTrackToFavourite, removeTrackFromFavourite } from './favouriteUtils';
 
 const INITIAL_STATE = {
     favouriteTracks: []
@@ -14,7 +14,8 @@ const favouriteReducer = ( state = INITIAL_STATE, action ) => {
             }
         case FavouriteActionTypes.REMOVE_FROM_FAVOURITE :
             return {
-                ...state
+                ...state,
+                favouriteTracks: removeTrackFromFavourite( state.favouriteTracks, action.payload )
             }
         default :
             return state;

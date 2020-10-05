@@ -51,15 +51,19 @@ class TrackOverview extends Component {
                         <div className="track-no-duration">
                             <span className='no-of-tracks track-info'>{tracks.length} tracks</span>
                             <span className="release-date track-info">{releasedate}</span>
-                            <span className="time track-info">{ tracks.reduce( getSeconds, 0 ) }seconds</span>
+                            <span className="time track-info">
+                                { Math.round( tracks.reduce( getSeconds, 0 ) / 60 ) }minutes
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div className='track-heading'>
-                    <span className="number-img">#</span>
+                    <span className="number">#</span>
                     <span className="track-name">Track Name</span>
                     <span className="song-duration">Duration</span>
-                    <span className="add-to-favourites">+</span>
+                    <span className="play">Play</span>
+                    <span className="add-to-favourites">Add</span>
+                    <span className="remove-from-favourites">Remove</span>
                 </div>
                 {
                     tracks.map( track => 
