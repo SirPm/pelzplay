@@ -24,7 +24,7 @@ class ArtistsPage extends Component {
                 <div className='artists'>
                     {
                         error === undefined || pending ? (
-                            <div>HELLO THERE if the artists list doesn't appear in a 1.5minutes, please refresh page</div>
+                            <div className='loading'>Loading Artists Information</div>
                         ) : (
                             artists.map( artist => <ArtistsOverview key={artist.id} artist={artist} /> )
                         )

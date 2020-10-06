@@ -1,5 +1,4 @@
 .album-item {
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +13,13 @@
         background-position: center;
         margin-bottom: 5px;
         border-radius: 20px;
+        cursor: pointer;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 
     .album-footer {
@@ -25,11 +31,26 @@
         height: 45%;
 
         .album-name {
-            color: oldlace;
+            
+            &.links {
+                color: oldlace;
+
+                &:hover {
+                    color: black;
+                }
+            }
         }
 
         .artist-name {
             color: white;
+            
+            &.links {
+                color: oldlace;
+
+                &:hover {
+                    color: black;
+                }
+            }
         }
     }
 }

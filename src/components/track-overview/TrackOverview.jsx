@@ -31,7 +31,7 @@ class TrackOverview extends Component {
         }
 
         if(pending) {
-            return ( <div>Please wait while fetching tracks...</div> )
+            return ( <div className='loading'>Please wait while fetching tracks...</div> )
         }
 
         return ( tracks ? (
@@ -72,7 +72,7 @@ class TrackOverview extends Component {
                 }
             </div>
         ) : (
-            <div>Please wait while fetching tracks...</div>
+            <div className='loading'>Please wait while fetching tracks...</div>
         ))
     }
 }

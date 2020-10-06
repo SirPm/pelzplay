@@ -12,11 +12,21 @@
         display: block;
         text-decoration: none;
         color: oldlace;
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: darkmagenta;
+        }
 
         &.brand-logo {
             color: black;
             font-weight: 900;
             font-size: 24px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }

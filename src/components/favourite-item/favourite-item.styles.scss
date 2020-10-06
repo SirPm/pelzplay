@@ -19,12 +19,26 @@
         display: inline-block;
     }
 
-    .fav-play, .remove-from-favourite {
+    .remove-from-favourite {
         width: 15%;
         cursor: pointer;
         font-size: 22px;
         color: red;
-        vertical-align: middle;
+        padding-top: 1%;
+    }
+
+    .fav-play {
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-left: 1%;
+        color: white;
+        background: black;
+        display: flex;
+        font-size: 10px;
+        cursor: pointer;
+        align-self: center;
+        display: inline;
+        margin: 0 6%;
     }
 }
 
@@ -35,8 +49,12 @@
             font-size: 10px;
         }
 
-        .fav-play, .remove-from-favourite {
+        .remove-from-favourite {
             font-size: 18px;
+        }
+
+        .fav-play {
+            font-size: 11px;
         }
     }
 }

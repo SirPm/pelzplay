@@ -16,8 +16,8 @@ const AlbumItem = ({ albumItem, history }) => {
                 onClick={ () => history.push(`/albums/${id}`)}
             />
             <div className='album-footer'>
-                <span><Link to={`/albums/${id}`} className='album-name'>{name}</Link></span>
-                <span>by <Link to={`/albums/artists/${artist_id}`} className='artist-name'>{artist_name}</Link></span>
+                <span><Link to={`/albums/${id}`} className='album-name links'>{name}</Link></span>
+                <span>by <Link to={`/albums/artists/${artist_id}`} className='artist-name links'>{artist_name}</Link></span>
             </div>
         </div>
     )

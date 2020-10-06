@@ -24,13 +24,13 @@ class ArtistPage extends Component {
             <div className='artist-page'>
                 { 
                     pending || !artist.tracks  ? (
-                        <div className='loading'>ARTIST INFO LOADING IN A BIT...</div>
+                        <div className='loading'>Artist Info Loading In A Bit...</div>
                     ) : (
                         <div className='artist-details'>
                             <div className='image-div'>
                                 {
                                     artist.image === '' ? (
-                                        <div>This Artist Has No Public Image</div>
+                                        <div className='no-image'>This Artist Has No Public Image</div>
                                     ) : (
                                         <div 
                                             className='artist-image'

@@ -42,12 +42,22 @@ const ArtistItem = ({ track, getAudio, addToFavourite, removeFromFavourite }) =>
             />
             <Icon 
                 icon={heartSolid} 
-                onClick={ () => addToFavourite(track) }
+                onClick={ 
+                    () => {
+                        addToFavourite(track)
+                        alert('Added to favourites')
+                    }
+                }
                 className='add-to-favourites'
             />
             <Icon
                 icon={heartLine}
-                onClick={ () => removeFromFavourite(track) }
+                onClick={ 
+                    () => {
+                        removeFromFavourite(track)
+                        alert('Removed from favourites');
+                    }
+                }
                 className='remove-from-favourites'
             />
         </div>

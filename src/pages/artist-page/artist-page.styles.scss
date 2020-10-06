@@ -1,7 +1,32 @@
  .artist-page {
 
     .loading {
+        margin: auto;
+        margin-top: 45%;
+        text-align: center;
+    }
+    
+    .loading:before {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: rgb(248, 31, 31);
+        border-bottom-color: rgb(248, 31, 31);
+        animation: spinner 0.7s ease infinite;
+    }
 
+    @keyframes spinner {
+        to {
+          transform: rotate(360deg);
+        }
     }
 
     .artist-details {
@@ -10,6 +35,10 @@
             margin: 40px auto;
             display: flex;
             min-height: 50px;
+
+            .no-image {
+                margin: auto;
+            }
     
             .artist-image {
                 width: 20%;
@@ -68,10 +97,6 @@
     .artist-page {
 
         .artist-details {
-
-            .image-div {
-
-            }
 
             .artist-songs-header {
                 width: 90%;

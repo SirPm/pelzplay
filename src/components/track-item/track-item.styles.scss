@@ -15,7 +15,19 @@
         text-align: center;
     }
 
-    .play, .add-to-favourites, .remove-from-favourites {
+    .play {
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        color: white;
+        background: black;
+        display: flex;
+        font-size: 10px;
+        cursor: pointer;
+    }
+
+    .add-to-favourites, .remove-from-favourites {
         cursor: pointer;
         color: red;
         font-size: 20px;
@@ -26,7 +38,7 @@
         text-align: center;
     }
 
-    .play, .add-to-favourites {
+    .add-to-favourites {
         width: 7.5%;
         text-align: center;
     }
@@ -37,8 +49,12 @@
     .track {
         font-size: 12px;
 
-        .play, .add-to-favourites, .remove-from-favourites {
+        .add-to-favourites, .remove-from-favourites {
             font-size: 18px;
+        }
+
+        .play {
+            font-size: 8px;
         }
     }
 }
@@ -48,8 +64,12 @@
         width: 90%;
         font-size: 10px;
 
-        .play, .add-to-favourites, .remove-from-favourites {
+        .add-to-favourites, .remove-from-favourites {
             font-size: 14px;
+        }
+
+        .play {
+            font-size: 6px;
         }
     }
 }

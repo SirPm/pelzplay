@@ -41,16 +41,25 @@ const TrackItem = ({ track, audioDetails, addToFavourite, removeFromFavourite })
                 onClick={ () => audioDetails( audio, name ) } 
             />
             <Icon 
+                icon={heartSolid} 
+                onClick={ 
+                    () => {
+                        addToFavourite(track)
+                        alert('Added to favourites')
+                    }
+                }
                 className='add-to-favourites'
-                icon={heartSolid}
-                onClick={ () => addToFavourite(track) }
             />
             <Icon
-                className='remove-from-favourites'
                 icon={heartLine}
-                onClick={ () => removeFromFavourite(track) }
+                onClick={ 
+                    () => {
+                        removeFromFavourite(track)
+                        alert('Removed from favourites');
+                    }
+                }
+                className='remove-from-favourites'
             />
-            {console.log(track)}
         </div>
     )
 }

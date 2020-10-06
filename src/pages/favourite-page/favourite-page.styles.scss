@@ -1,3 +1,8 @@
+.fav-title {
+    margin: 30px auto;
+    width: fit-content;
+}
+
 .artist-songs-header {
     width: 80%;
     margin: auto;
@@ -10,49 +15,56 @@
     .fav-name-heading {
         width: 40%;
         text-align: center;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .fav-time-heading {
         width: 20%;
         text-align: center;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .fav-play-heading {
         width: 15%;
         text-align: center;
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .fav-remove-heading {
         width: 15%;
         text-align: center;
-        font-size: 18px;
+        font-size: 14px;
     }
 
 
 }
 
+.no-fav {
+    text-align: center;
+}
+
 @media screen and ( max-width: 500px ) {
-    .artist-songs-header {
+    .fav-title {
+
+        .artist-songs-header {
     
-        .fav-name-heading {
-            font-size: 12px;
+            .fav-name-heading {
+                font-size: 12px;
+            }
+        
+            .fav-time-heading {
+                font-size: 12px;
+            }
+        
+            .fav-play-heading {
+                font-size: 12px;
+            }
+        
+            .fav-remove-heading {
+                font-size: 12px;
+            }
+        
+        
         }
-    
-        .fav-time-heading {
-            font-size: 12px;
-        }
-    
-        .fav-play-heading {
-            font-size: 12px;
-        }
-    
-        .fav-remove-heading {
-            font-size: 12px;
-        }
-    
-    
     }
 }

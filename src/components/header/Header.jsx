@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-// import './header.styles.scss';
+import './header.styles.scss';
 
 
 class Header extends Component {
 
     navSlide = () => {
         const nav = document.querySelector('.nav-links');
+        const header = document.querySelector('.header');
         const burger = document.querySelector('.burger');
       
         // Toggle nav
         nav.classList.toggle('nav-active');
-      
+        header.classList.toggle('burger-active');
+        
         // Animate the burger button
         burger.classList.toggle('toggleBurger');
+
+
     }
 
     render() {
@@ -24,12 +29,7 @@ class Header extends Component {
                     <div className="line2"></div>
                     <div className="line3"></div>
                 </div>
-                <form>
-                    <input 
-                        type="search"
-                        className='search-input'
-                    />
-                </form>
+                <Link to='/' className='brand-logo'>Good music...</Link>
             </div>
         )
     }

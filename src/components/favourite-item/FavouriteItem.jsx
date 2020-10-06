@@ -40,7 +40,12 @@ const FavouriteItem = ({ track, getAudio, removeFromFavourite }) => {
             />
             <Icon
                 icon={heartLine}
-                onClick={ () => removeFromFavourite(track) }
+                onClick={ 
+                    () => {
+                        removeFromFavourite(track)
+                        alert('Removed from favourites');
+                    }
+                }
                 className='remove-from-favourite'
             />
         </div>
