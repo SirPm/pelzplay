@@ -8,7 +8,7 @@ import ArtistPage from '../artist-page/ArtistPage';
 const AlbumPage = ({ match }) => {
     
     return (
-        <div>
+        <div className="main">
             <Switch>
                 <Route exact path={match.path} component={Album} />
                 <Route exact path={`${match.path}/:trackId`} component={TrackOverview} />

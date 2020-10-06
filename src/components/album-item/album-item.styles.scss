@@ -1,26 +1,57 @@
 .album-item {
     cursor: pointer;
-    width: 20%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 250px;
     align-items: center;
-    flex-basis: 20.33%;
-    margin-bottom: 100px;
+    flex-basis: 25.33%;
 
     .image {
         width: 100%;
-        height: 85%;
+        height: 55%;
         background-size: cover;
         background-position: center;
         margin-bottom: 5px;
+        border-radius: 20px;
     }
 
     .album-footer {
         width: 100%;
-        height: 15%;
         display: flex;
         flex-direction: column;
-        font-size: 18px;
+        font-size: 12px;
+        margin-left: 15%;
+        height: 45%;
+
+        .album-name {
+            color: oldlace;
+        }
+
+        .artist-name {
+            color: white;
+        }
     }
+}
+
+@media screen and (max-width: 600px) {
+    .album-item {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .album-item {
+        flex-basis: 80%;
+
+        .image {
+            width: 75%;
+            height: 75%;
+        }
+
+        .album-footer {
+            width: 75%;
+        }
+    }
+
 }

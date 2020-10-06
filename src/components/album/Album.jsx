@@ -20,13 +20,13 @@ class Album extends Component {
             <div className='album'>
                 {
                     pending ? (
-                        <div>Albums Loading...</div>
+                        <div className='loading'>Albums Loading...</div>
                     ) : (
                         albums.map( album => <AlbumItem key={album.id} albumItem={album} /> )
                     )
                 }
                 {
-                    error === undefined && <div>Oops...seems your network is poor or our servers are facing a glitch. Please refresh after 60seconds</div>
+                    error ? <div className='error'>Oops...seems your network is poor or our servers are facing a glitch. Please refresh after 60seconds</div> : <div style={{ display: 'none' }}></div>
                 }
             </div>
         )

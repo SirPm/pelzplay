@@ -8,7 +8,7 @@ const ArtistsOverview = ({ artist: { image, name, id }, history }) => {
         <div className="artists-overview">
             {
                 image === '' ? (
-                    <div onClick={ () => history.push(`/albums/artists/${id}`)} >This Artist Has No Public Image</div>
+                    <div className='no-image' onClick={ () => history.push(`/albums/artists/${id}`)} >This Artist Has No Public Image</div>
                 ) : (
                     <div 
                         style={{

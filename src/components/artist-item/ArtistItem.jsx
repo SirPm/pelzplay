@@ -37,20 +37,18 @@ const ArtistItem = ({ track, getAudio, addToFavourite, removeFromFavourite }) =>
             <span className="track-duration">{time}</span>
             <Icon
                 icon={playFill} 
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }} 
                 onClick={ () => getAudio( audio, name ) } 
+                className='play'
             />
             <Icon 
-                icon={heartSolid}
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }}  
+                icon={heartSolid} 
                 onClick={ () => addToFavourite(track) }
-                className='add-to-favourite'
+                className='add-to-favourites'
             />
             <Icon
                 icon={heartLine}
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }} 
                 onClick={ () => removeFromFavourite(track) }
-                className='remove-from-favourite'
+                className='remove-from-favourites'
             />
         </div>
     )

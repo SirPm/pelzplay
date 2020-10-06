@@ -11,7 +11,7 @@ class PlaylistPage extends React.Component {
     
     render() {
         return (
-            <div className='playlist-page'>
+            <div className='main'>
                 PLAYLIST PAGE COMING SOON...
             </div>
         )

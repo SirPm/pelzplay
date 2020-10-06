@@ -11,8 +11,9 @@ const Footer = ({ audioDetails }) => {
 
     return (
         <div className='footer'>
-            <span>{audioName}</span>
+            <span className='footer-audio-name'>{audioName}</span>
             <audio
+                className='audio-player'
                 controls
                 autoPlay
                 src={audioUrl}>

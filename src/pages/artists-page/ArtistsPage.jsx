@@ -20,14 +20,16 @@ class ArtistsPage extends Component {
         console.log(artists)
 
         return (
-            <div className="artists-page">
-                {
-                    error === undefined || pending ? (
-                        <div>HELLO THERE if the artists list doesn't appear in a 1.5minutes, please refresh page</div>
-                    ) : (
-                        artists.map( artist => <ArtistsOverview key={artist.id} artist={artist} /> )
-                    )
-                }            
+            <div className="main">
+                <div className='artists'>
+                    {
+                        error === undefined || pending ? (
+                            <div>HELLO THERE if the artists list doesn't appear in a 1.5minutes, please refresh page</div>
+                        ) : (
+                            artists.map( artist => <ArtistsOverview key={artist.id} artist={artist} /> )
+                        )
+                    } 
+                </div>           
             </div>
         )
     }

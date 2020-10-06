@@ -32,25 +32,23 @@ const TrackItem = ({ track, audioDetails, addToFavourite, removeFromFavourite })
     
     return (
         <div className='track'>
-            <span className='no'>{position}</span>
-            <span>{name}</span>
-            <span className="time">{time}</span>
+            <span className='number'>{position}</span>
+            <span className='track-name'>{name}</span>
+            <span className="song-duration">{time}</span>
             <Icon
-                icon={playFill} 
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }} 
+                className='play'
+                icon={playFill}
                 onClick={ () => audioDetails( audio, name ) } 
             />
             <Icon 
+                className='add-to-favourites'
                 icon={heartSolid}
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }}  
                 onClick={ () => addToFavourite(track) }
-                className='add-to-favourite'
             />
             <Icon
+                className='remove-from-favourites'
                 icon={heartLine}
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }} 
                 onClick={ () => removeFromFavourite(track) }
-                className='remove-from-favourite'
             />
             {console.log(track)}
         </div>

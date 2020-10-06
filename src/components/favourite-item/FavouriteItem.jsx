@@ -35,12 +35,11 @@ const FavouriteItem = ({ track, getAudio, removeFromFavourite }) => {
             <span className="fav-time">{time}</span>
             <Icon
                 icon={playFill} 
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }} 
                 onClick={ () => getAudio( audio, name ) } 
+                className='fav-play'
             />
             <Icon
                 icon={heartLine}
-                style={{ cursor: 'pointer', color: 'red', fontSize: '24px' }} 
                 onClick={ () => removeFromFavourite(track) }
                 className='remove-from-favourite'
             />

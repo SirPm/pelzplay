@@ -1,0 +1,42 @@
+.favourite-item {
+
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+
+    .fav-name {
+        width: 40%;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .fav-time {
+        width: 20%;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .fav-play, .remove-from-favourite {
+        width: 15%;
+        cursor: pointer;
+        font-size: 22px;
+        color: red;
+        vertical-align: middle;
+    }
+}
+
+@media screen and ( max-width: 500px) {
+    .favourite-item {
+
+        .fav-name, .fav-time {
+            font-size: 10px;
+        }
+
+        .fav-play, .remove-from-favourite {
+            font-size: 18px;
+        }
+    }
+}

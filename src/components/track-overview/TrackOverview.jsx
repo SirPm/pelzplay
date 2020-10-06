@@ -35,7 +35,7 @@ class TrackOverview extends Component {
         }
 
         return ( tracks ? (
-            <div className="track-overview">
+            <div className='track-overview'>
                 <div className="track-overview-heading">
                     <div 
                         className="track-overview-img"

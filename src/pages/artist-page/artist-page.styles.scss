@@ -1,54 +1,125 @@
  .artist-page {
-    margin-left: 220px;
-    min-width: 770px;
-    position: relative;
-    padding-top: 60px;
-    min-height: 577px;
-    padding-bottom: 250px;
 
-    .image-div {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        min-height: 50px;
-        padding: 40px 0;
+    .loading {
 
-        .artist-image {
-            width: 20%;
-            background-size: cover;
-            background-position: center;
-            height: 150px;
-            margin: 40px auto;
-        }
     }
 
-    .artist-songs-header {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+    .artist-details {
 
-        .number-img {
-            width: 15%;
+        .image-div {
+            margin: 40px auto;
+            display: flex;
+            min-height: 50px;
+    
+            .artist-image {
+                width: 20%;
+                background-size: cover;
+                background-position: center;
+                height: 150px;
+                margin: 40px auto;
+                border-radius: 50%;
+            }
+        }
+    
+        .artist-songs-header {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            font-size: 12px;
+            padding: 10px 0;
+    
+            .number-img {
+                width: 15%;
+                text-align: center;
+            }
+    
+            .album-name {
+                width: 30%;
+                text-align: center;
+            }
+    
+            .track-name {
+                width: 30%;
+                text-align: center;
+            }
+    
+            .song-duration {
+                width: 8%;
+                margin-right: 2%;
+                text-align: center;
+            }
+    
+            .play, .add-to-favourites, .remove-from-favourites {
+                width: 4%;
+                margin-right: 1%;
+                text-align: center;
+            }
+    
+    
         }
 
-        .album-name {
-            width: 30%;
+    }
+
+}
+
+@media screen and ( max-width: 800px) {
+    .artist-page {
+
+        .artist-details {
+
+            .image-div {
+
+            }
+
+            .artist-songs-header {
+                width: 90%;
+            }
         }
+    }
+}
 
-        .track-name {
-            width: 30%;
+
+@media screen and ( max-width: 600px) {
+    .artist-page {
+
+        .artist-details {
+
+            .image-div {
+
+                .artist-image {
+                    width: 30%;
+                    height: 160px;
+                }
+            }
         }
+    }
+}
 
-        .song-duration {
-            width: 15%;
+@media screen and ( max-width: 500px) {
+    .artist-page {
+
+        .artist-details {
+
+            .image-div {
+
+                .artist-image {
+                    width: 35%;
+                    height: 140px;
+                }
+                
+            }
+
+            .artist-songs-header {
+                font-size: 10px;
+                width: 95%;
+
+                .add-to-favourites {
+                    margin-right: -2%;
+                    margin-left: 2%;
+                }
+            }
         }
-
-        .add-to-favourites {
-            width: 10%;
-        }
-
-
     }
 }

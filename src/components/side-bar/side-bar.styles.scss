@@ -1,34 +1,22 @@
-.side-bar {
-    background-color: grey;
-    border-right: 1px solid #eaeaea;
-    border-right: 1px solid black;
-    bottom: 80px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 220px;
-    z-index: 100;
+.nav-links {
 
-    .brand-name {
-        padding-left: 30px;
-        cursor: pointer;
-    }
-
-    .songs {
-        // margin-top: 150px;
-        
-        .links {
-            display: block;
-            text-decoration: none;
-            color: black;
-            padding-left: 30px;
-        }
+    .side-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px;
     }
     
+    .links {
+        display: block;
+        text-decoration: none;
+        color: oldlace;
+
+        &.brand-logo {
+            color: black;
+            font-weight: 900;
+            font-size: 24px;
+        }
+    }
 }

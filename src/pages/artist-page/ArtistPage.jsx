@@ -24,9 +24,9 @@ class ArtistPage extends Component {
             <div className='artist-page'>
                 { 
                     pending || !artist.tracks  ? (
-                        <div>ARTIST INFO LOADING IN A BIT...</div>
+                        <div className='loading'>ARTIST INFO LOADING IN A BIT...</div>
                     ) : (
-                        <div>
+                        <div className='artist-details'>
                             <div className='image-div'>
                                 {
                                     artist.image === '' ? (
@@ -45,10 +45,10 @@ class ArtistPage extends Component {
                                 <span className="number-img">#</span>
                                 <span className="album-name">Album Name</span>
                                 <span className="track-name">Track Name</span>
-                                <span className="song-duration">Duration</span>
+                                <span className="song-duration">Time</span>
                                 <span className="play">Play</span>
-                                <span className="add-to-favourites">Add</span>
-                                <span className="remove-from-favourites">Remove</span>
+                                <span className="add-to-favourites">+</span>
+                                <span className="remove-from-favourites">-</span>
                             </div>
                             {
                                 artist.tracks.map( track => <ArtistItem key={track.id} track={track} /> )
@@ -56,7 +56,7 @@ class ArtistPage extends Component {
                         </div>
                     )
                 }
-                { error === undefined && <div>OOPS NETWORK ERROR TRY AGAIN IN A BIT...</div> }
+                { error === undefined && <div className='error'>OOPS NETWORK ERROR TRY AGAIN IN A BIT...</div> }
             </div>
         )
     }

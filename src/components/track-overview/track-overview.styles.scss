@@ -1,10 +1,4 @@
 .track-overview {
-    margin-left: 220px;
-    min-width: 770px;
-    position: relative;
-    padding-top: 60px;
-    min-height: 577px;
-    padding-bottom: 250px;
 
     .track-overview-heading {
         width: 80%;
@@ -14,13 +8,14 @@
         padding: 40px 0;
 
         .track-overview-img {
-            width: 20%;
+            width: 30%;
             background-size: cover;
             background-position: center;
             margin-bottom: 5px;
             height: 150px;
             margin: auto 0;
             margin-right: 10%;
+            border-radius: 20px;
         }
 
         .track-overview-album-info {
@@ -29,10 +24,13 @@
             height: 150px;
             justify-content: space-around;
             margin: auto 0;
+            width: 300px;
 
             .album-and-artist {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
+                height: 50px;
             }
 
             .track-no-duration {
@@ -41,9 +39,123 @@
 
                 .track-info {
                     display: block;
-                    border-right: 1px solid black;
+                    border-right: 1px solid palevioletred;
+                    margin: 0 auto;
+                    padding-right: 15px;
+                }
+
+                .time {
+                    border-right: 0px;
+                }
+
+                .no-of-tracks {
+                    margin-left: 0;
                 }
             }
+        }
+    }
+
+    .track-heading {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        font-size: 14px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 5px 0;
+
+        .number {
+            width: 5%;
+        }
+
+        .track-name {
+            width: 50%;
+            text-align: center;
+        }
+
+        .song-duration, .remove-from-favourites {
+            width: 15%;
+            text-align: center;
+        }
+
+        .play, .add-to-favourites {
+            width: 7.5%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and ( max-width: 600px) {
+    .track-overview {
+
+        .track-overview-heading {
+            font-size: 10px;
+
+            .track-overview-img {
+                height: 180px;
+                width: 55%;
+            }
+
+            .track-overview-album-info {
+                font-size: 12px;
+                height: 120px;
+
+                .album-and-artist {
+                    height: 30px;
+                }
+
+                .track-no-duration {
+
+                    .track-info {
+                        margin: 0;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .track-overview {
+
+        .track-overview-heading {
+            flex-direction: column;
+
+            .track-overview-img {
+                height: 200px;
+                margin: auto;
+            }
+            
+            .track-overview-album-info {
+                width: 200px;
+                margin: auto;
+
+                .album-and-artist {
+                    align-items: center;
+                    font-size: 14px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 400px) {
+    .track-overview {
+
+        .track-overview-heading {
+
+            .track-overview-img {
+                height: 150px;
+            }
+        }
+
+        .track-heading {
+            width: 90%;
+            font-size: 10px;
+            
         }
     }
 }

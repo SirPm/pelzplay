@@ -1,11 +1,9 @@
-.artists-page {
-    margin-left: 220px;
-    min-width: 770px;
-    position: relative;
-    padding-top: 60px;
-    padding-bottom: 300px;
-    min-height: 577px;
+.artists {
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    margin: 40px auto;
+    justify-content: space-between;
+    margin-bottom: 90px;
     
 }

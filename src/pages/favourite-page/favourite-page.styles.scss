@@ -1,38 +1,58 @@
-.favourite-page {
-    margin-left: 220px;
-    min-width: 770px;
-    position: relative;
-    padding-top: 60px;
-    min-height: 577px;
-    padding-bottom: 250px;
+.artist-songs-header {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 0;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 
+    .fav-name-heading {
+        width: 40%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .fav-time-heading {
+        width: 20%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .fav-play-heading {
+        width: 15%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .fav-remove-heading {
+        width: 15%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+}
+
+@media screen and ( max-width: 500px ) {
     .artist-songs-header {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-
-        .number-img {
-            width: 15%;
+    
+        .fav-name-heading {
+            font-size: 12px;
         }
-
-        .album-name {
-            width: 30%;
+    
+        .fav-time-heading {
+            font-size: 12px;
         }
-
-        .track-name {
-            width: 30%;
+    
+        .fav-play-heading {
+            font-size: 12px;
         }
-
-        .song-duration {
-            width: 15%;
+    
+        .fav-remove-heading {
+            font-size: 12px;
         }
-
-        .add-to-favourites {
-            width: 10%;
-        }
-
-
+    
+    
     }
 }
