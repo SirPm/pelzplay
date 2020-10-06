@@ -62,8 +62,8 @@ class TrackOverview extends Component {
                     <span className="track-name">Track Name</span>
                     <span className="song-duration">Duration</span>
                     <span className="play">Play</span>
-                    <span className="add-to-favourites">Add</span>
-                    <span className="remove-from-favourites">Remove</span>
+                    <span className="add-to-favourites">+</span>
+                    <span className="remove-from-favourites">-</span>
                 </div>
                 {
                     tracks.map( track => 
