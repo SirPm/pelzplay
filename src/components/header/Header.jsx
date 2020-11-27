@@ -46,7 +46,7 @@ const Header = () => {
         }
     }
 
-    // console.log(searchResults);
+    console.log(searchResults);
 
     return (
         <div className='header'>
@@ -69,18 +69,22 @@ const Header = () => {
             />
             <div className={` ${ showResultsDiv ? 'search-results-div' : 'hide' } `}>
                 {
-                    searchResults.map( ({ artist_id, id, artist_name, name }) => <div key={id} className='search-result'>
-                        <a className='search-result-link' 
-                            href={`/albums/artists/${artist_id}`}
-                            onClick={ () => {
-                                setShowResultsDiv(false);
-                                setSearchInput('');
-                            }}
-                        >
-                            <span className='track-name'>{name}</span>
-                            <span className='artist-name'>{artist_name}</span>
-                        </a>
-                    </div> )
+                    ( searchResults.length !== 0 ) ? (
+                        searchResults.map( ({ artist_id, id, artist_name, name }) => <div key={id} className='search-result'>
+                            <a className='search-result-link' 
+                                href={`/albums/artists/${artist_id}`}
+                                onClick={ () => {
+                                    setShowResultsDiv(false);
+                                    setSearchInput('');
+                                }}
+                            >
+                                <span className='track-name'>{name}</span>
+                                <span className='artist-name'>{artist_name}</span>
+                            </a>
+                        </div> )
+                    ) : (
+                        <div className='no-match'>no match found :( </div>
+                    )
                 }
             </div>
         </div>
