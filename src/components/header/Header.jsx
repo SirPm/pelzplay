@@ -46,7 +46,7 @@ const Header = () => {
         }
     }
 
-    console.log(searchResults);
+    // console.log(searchResults);
 
     return (
         <div className='header'>

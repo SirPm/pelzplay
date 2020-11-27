@@ -17,7 +17,7 @@ class ArtistsPage extends Component {
     
     render() {
         const { artists, error, pending } = this.props;
-        console.log(artists)
+        // console.log(artists)
 
         return (
             <div className="main">
